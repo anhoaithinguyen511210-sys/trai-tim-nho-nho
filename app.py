@@ -76,7 +76,6 @@ HTML = """
     border-radius: 20px;
     box-shadow: 0 4px 15px rgba(255, 105, 180, 0.2);
 }
-
 .music-player {
     margin: 20px auto;
     max-width: 500px;
@@ -88,11 +87,7 @@ HTML = """
 <body>
   <main class="card">
     <div class="heart" aria-label="Trái tim">♥</div>
-    <h1>{{ title }}</h1>
-    <p class="subtitle">Một góc nhỏ dành riêng cho những vần thơ của tôi</p>
-    <div class="poem">{% if poem %}{{ poem }}{% else %}<span class="empty">Bài thơ sẽ được thêm vào đây sau…</span>{% endif %}</div>
-  <div class="signature">♡ viết bằng cả trái tim ♡</div>
-<div class="message">
+  <div class="message">
   Ngày Phụ nữ Việt Nam, con xin chúc mẹ
   luôn khỏe mạnh, bớt cáu kỉnh và mắng con!! 💗💗💗
 </div>
