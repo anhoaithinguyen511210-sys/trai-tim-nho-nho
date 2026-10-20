@@ -63,6 +63,26 @@ HTML = """
     @media (prefers-reduced-motion: reduce) {
       .heart, .floating { animation: none; }
     }
+.message {
+    margin: 20px auto;
+    max-width: 500px;
+    padding: 16px;
+    color: #c2185b;
+    font-size: 20px;
+    line-height: 1.7;
+    text-align: center;
+    font-family: cursive;
+    background: rgba(255, 255, 255, 0.65);
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(255, 105, 180, 0.2);
+}
+
+.music-player {
+    margin: 20px auto;
+    max-width: 500px;
+    text-align: center;
+    color: #c2185b;
+}
   </style>
 </head>
 <body>
@@ -71,7 +91,22 @@ HTML = """
     <h1>{{ title }}</h1>
     <p class="subtitle">Một góc nhỏ dành riêng cho những vần thơ của tôi</p>
     <div class="poem">{% if poem %}{{ poem }}{% else %}<span class="empty">Bài thơ sẽ được thêm vào đây sau…</span>{% endif %}</div>
-    <div class="signature">♡ viết bằng cả trái tim ♡</div>
+  <div class="signature">♡ viết bằng cả trái tim ♡</div>
+<div class="message">
+  Ngày Phụ nữ Việt Nam, con xin chúc mẹ
+  luôn khỏe mạnh, bớt cáu kỉnh và mắng con!! 💗💗💗
+</div>
+<div class="music-player">
+  <p>🎵 Một giai điệu dành riêng cho mẹ 💗</p>
+  <iframe
+    width="100%"
+    height="200"
+    src="https://www.youtube.com/embed/sICoUsvVAok"
+    title="Bài hát dành cho mẹ"
+    allow="encrypted-media; picture-in-picture"
+    allowfullscreen>
+  </iframe>
+</div>
   </main>
   <script>
     for (let i = 0; i < 18; i++) {
